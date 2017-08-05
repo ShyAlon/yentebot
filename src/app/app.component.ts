@@ -12,13 +12,15 @@ export class MyApp {
   rootPage: any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    firebase.initializeApp({
-      apiKey: "AIzaSyALKfevapBOYK202f6k5mPPfMrT1MHDv5A",
-      authDomain: "bill-tracker-e5746.firebaseapp.com",
-      databaseURL: "https://bill-tracker-e5746.firebaseio.com",
-      storageBucket: "bill-tracker-e5746.appspot.com",
-      messagingSenderId: "508248799540"
-    });
+    var config = {
+      apiKey: "AIzaSyAhD4-YLQTXoGmJ_OepDH3I7QF3tZ32UA4",
+      authDomain: "yachnebot.firebaseapp.com",
+      databaseURL: "https://yachnebot.firebaseio.com",
+      projectId: "yachnebot",
+      storageBucket: "",
+      messagingSenderId: "655901438861"
+    };
+    firebase.initializeApp(config);
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
